@@ -23,6 +23,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
+- [Clique aqui para acessar o projeto](https://jessejunior02.github.io/dev-link/)
+
 O DevLinks é um agregador de links para usar como cartão de visitas online.
 
 ## Licença
