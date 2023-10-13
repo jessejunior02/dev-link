@@ -1,0 +1,14 @@
+:root {
+  --text-color: #fff;
+  --bg-standard: #346173;
+  --bg-gradient: linear-gradient(
+    to right bottom,
+    #011826,
+    #021d2c,
+    #022333,
+    #022839,
+    #022e40
+  );
+  --stroke-color: #7297a6;
+  --highlight-color-hover: #022E40;
+}
