@@ -62,7 +62,7 @@ a.nav-link:hover {
 }
 
 /* MOBILE */
-@media (max-width: 685px) {
+@media (max-width: 785px) {
   p.myName {
     font-size: 12px;
   }
