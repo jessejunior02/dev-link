@@ -26,3 +26,23 @@ section#profile p {
   padding: 24px;
   font-weight: 500;
 }
+
+/* LIST LINKS */
+ul#external-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+}
+
+ul a.links-external {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px;
+  border: var(--border-color);
+  border-radius: 15px;
+  background: var(--bg-secondary);
+  text-decoration: none;
+}
