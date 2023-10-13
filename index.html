@@ -1,38 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style/style.css">
+  <head>
+    <!-- FONTS DO GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style/navbar.css" />
     <title>Dev-Links</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div id="myName"></div>
-        <div id="navbar">
-            
-            <a href="#">Home</a>
+      <nav id="navbar">
+        <p class="myName">Jesse Junior | Desenvolvedor Frontend</p>
+        <ul id="nav-menu">
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+        </ul>
+        <div id="menu-buger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
+      </nav>
     </header>
     <main class="container">
-        <!-- FOTO DE APRESENTAÇÃO -->
-        <section id="profile">
-            <div id="profile-picture"></div>
-        </section>
-        <!-- CAIXA COM OS LINKS -->
-        <section id="profile-links">
-            <div id="profile-presentation"></div>
-            <ul>
-                <a href="#">AAA</a>
-                <a href="#">BBB</a>
-                <a href="#">CCC</a>
-            </ul>
-            <div id="social-links"></div>
-        </section>
+      <!-- FOTO DE APRESENTAÇÃO -->
+      <section id="profile">
+        <div id="profile-picture"></div>
+      </section>
+      <!-- CAIXA COM OS LINKS -->
+      <section id="profile-links">
+        <div id="profile-presentation"></div>
+        <ul>
+          <a href="#">AAA</a>
+          <a href="#">BBB</a>
+          <a href="#">CCC</a>
+        </ul>
+        <div id="social-links"></div>
+      </section>
     </main>
-
-        <!-- SCRIPT PARA USAR ICON DO SITE IONICONS -->
+    <!-- SCRIPT PARA USAR ICON DO SITE IONICONS -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
+
+    <!-- MEUS SCRIPTS -->
+    <script src="./src/layout/navbar.js"></script>
+  </body>
 </html>
