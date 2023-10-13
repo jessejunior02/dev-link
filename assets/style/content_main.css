@@ -47,6 +47,8 @@ ul a.links-external {
   border-radius: 15px;
   background: var(--bg-secondary);
   text-decoration: none;
+
+  transition: background .5s;
 }
 
 /* SOCIAL LINKS */
@@ -65,4 +67,15 @@ section#social-links a {
 
   padding: 16px;
   border-radius: 50%;
+
+  transition: background .5s;
+}
+
+/* HOVERS */
+ul a.links-external:hover {
+  background: var(--bg-color-hover);
+}
+
+section#social-links a:hover {
+  background: var(--bg-color-hover);
 }
