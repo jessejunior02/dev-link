@@ -1,13 +1,13 @@
+/* VARIAVEIS */
 :root {
   --bg-primary: #141111;
   --bg-secondary: #3636366a;
   --text-primary: #eee;
   --text-secondary: #a7a6a6;
   --border-color: 1px solid #333333af;
-
+  --shadow: #4c4c4c6a;
   --bg-color-hover: #ffffff36;
 }
-
 
 /* CONFIGURAÇÕES GLOBAIS */
 * {
@@ -24,7 +24,7 @@ body {
 
 body * {
   color: var(--text-primary);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 /* HEADER | MENU NAVBAR */
@@ -101,7 +101,7 @@ section#profile img {
   margin: auto;
   width: 150px;
   border-radius: 20%;
-  box-shadow: 1px 1px 15px #4c4c4c6a;
+  box-shadow: 1px 1px 15px var(--shadow);
 }
 
 section#profile p {
@@ -130,7 +130,7 @@ ul a.links-external {
   background: var(--bg-secondary);
   text-decoration: none;
 
-  transition: background .5s;
+  transition: background 0.5s;
 }
 
 /* SOCIAL LINKS */
@@ -150,7 +150,7 @@ section#social-links a {
   padding: 16px;
   border-radius: 50%;
 
-  transition: background .5s;
+  transition: background 0.5s;
 }
 
 /* HOVERS */
@@ -190,8 +190,8 @@ section#social-links a:hover {
     width: 100%;
     border-radius: 0 0 20px 20px;
     background: var(--bg-secondary);
-    backdrop-filter: blur(50px);
-    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     opacity: 1;
     text-align: center;
     transition: 0.3s;
