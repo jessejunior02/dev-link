@@ -1,13 +1,6 @@
 :root {
-  --text-color: #fff;
-  --bg-standard: #011826;
-  --bg-gradient: linear-gradient(to right bottom,
-    #022e40,
-    #103a4c,
-    #1c4759,
-    #285466,
-    #346173
-  );
-  --stroke-color: #7297a6;
-  --highlight-color-hover: #022E40;
+  --bg-primary: #141111;
+  --bg-secondary: #3636366a;
+  --text-primary: #eee;
+  --text-secondary: #a7a6a6;
 }
