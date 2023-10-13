@@ -1,5 +1,31 @@
-@import url(./global.css);
-@import url(./_variables.css);
+:root {
+  --bg-primary: #141111;
+  --bg-secondary: #3636366a;
+  --text-primary: #eee;
+  --text-secondary: #a7a6a6;
+  --border-color: 1px solid #333333af;
+
+  --bg-color-hover: #ffffff36;
+}
+
+
+/* CONFIGURAÇÕES GLOBAIS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: var(--bg-primary);
+}
+
+body * {
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+}
 
 /* HEADER | MENU NAVBAR */
 header {
@@ -57,6 +83,76 @@ span.bar {
   transition: all 0.3s ease-in-out;
 }
 
+main.container {
+  margin: 24px auto 0px;
+  padding: 0 24px;
+  width: 100%;
+  max-width: 588px;
+}
+
+/* PROFILE */
+section#profile {
+  width: 100%;
+  padding: 24px;
+  text-align: center;
+}
+
+section#profile img {
+  margin: auto;
+  width: 150px;
+  border-radius: 20%;
+  box-shadow: 1px 1px 15px #4c4c4c6a;
+}
+
+section#profile p {
+  padding: 24px 0;
+  font-weight: 500;
+}
+
+/* LIST LINKS */
+ul#external-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+
+  padding: 0 0 24px;
+}
+
+ul a.links-external {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px;
+  border: var(--border-color);
+  border-radius: 15px;
+  background: var(--bg-secondary);
+  text-decoration: none;
+
+  transition: background .5s;
+}
+
+/* SOCIAL LINKS */
+section#social-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 5px 0;
+  font-size: 24px;
+}
+
+section#social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px;
+  border-radius: 50%;
+
+  transition: background .5s;
+}
+
 /* HOVERS */
 a.nav-link:after {
   content: "";
@@ -70,6 +166,14 @@ a.nav-link:after {
 }
 a.nav-link:hover:after {
   width: 100%;
+}
+
+ul a.links-external:hover {
+  background: var(--bg-color-hover);
+}
+
+section#social-links a:hover {
+  background: var(--bg-color-hover);
 }
 
 /* MOBILE */
