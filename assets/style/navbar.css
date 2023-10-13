@@ -61,7 +61,7 @@ a.nav-link:hover {
 /* MOBILE */
 @media (max-width: 685px) {
   p.myName {
-    font-size: 15px;
+    font-size: 12px;
   }
   ul#nav-menu {
     position: fixed;
