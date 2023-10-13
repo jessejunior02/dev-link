@@ -1,3 +1,5 @@
+@import url(./light.css);
+
 /* VARIAVEIS */
 :root {
   --bg-primary: #141111;
@@ -7,6 +9,9 @@
   --border-color: 1px solid #333333af;
   --shadow: #4c4c4c6a;
   --bg-color-hover: #ffffff36;
+
+  --switch-bg-color: #eee;
+  --switch-img: url(../icon/moon-stars.svg);
 }
 
 /* CONFIGURAÇÕES GLOBAIS */
@@ -46,7 +51,7 @@ nav#navbar {
 
 p.myName {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 ul#nav-menu {
@@ -105,8 +110,46 @@ section#profile img {
 }
 
 section#profile p {
-  padding: 24px 0;
+  padding: 24px 0 0;
   font-weight: 500;
+}
+
+/* SWITCH DARK/LIGHT MODE */
+#switch {
+  position: relative;
+
+  margin: 4px auto;
+  width: 64px;
+
+  cursor: pointer;
+}
+
+#switch button {
+  position: absolute;
+  z-index: 1;
+  top: 45%;
+  transform: translateY(-50%);
+  animation: slide-back 0.2s forwards;
+
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background: var(--switch-bg-color) var(--switch-img) no-repeat center;
+
+  cursor: pointer;
+}
+
+#switch span {
+  display: inline-block;
+  width: 64px;
+  height: 24px;
+  border: 1px solid var(--border-color);
+  border-radius: 9999px;
+  background: var(--bg-color-hover);
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 
 /* LIST LINKS */
@@ -116,7 +159,7 @@ ul#external-links {
   gap: 16px;
   list-style: none;
 
-  padding: 0 0 24px;
+  padding: 24px 0;
 }
 
 ul a.links-external {
@@ -168,6 +211,10 @@ a.nav-link:hover:after {
   width: 100%;
 }
 
+section#switch button:hover {
+  outline: 8px solid var(--bg-color-hover);
+}
+
 ul a.links-external:hover {
   background: var(--bg-color-hover);
 }
@@ -214,5 +261,24 @@ section#social-links a:hover {
   }
   div#menu-buger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* ANIMATION DARK/LIGHT MODE */
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
