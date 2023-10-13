@@ -1,0 +1,17 @@
+@import url(./_variables.css);
+@import url(./navbar.css);
+
+/* CONFIGURAÇÕES GLOBAIS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+body * {
+  color: var(--text-color);
+}
