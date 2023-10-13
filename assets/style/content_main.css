@@ -1,0 +1,27 @@
+@import url(global.css);
+@import url(_variables.css);
+
+main.container {
+  margin: 24px auto 0px;
+  padding: 0 24px;
+  width: 100%;
+  max-width: 588px;
+}
+
+section#profile {
+  width: 100%;
+  padding: 24px;
+  text-align: center;
+}
+
+section#profile img {
+  margin: auto;
+  width: 150px;
+  border-radius: 20%;
+  box-shadow: 1px 1px 15px #4c4c4c6a;
+}
+
+section#profile p {
+  padding: 24px;
+  font-weight: 500;
+}
